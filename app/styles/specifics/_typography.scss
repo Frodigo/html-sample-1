@@ -3,3 +3,34 @@ h1, .heading-1 {
   color: white;
   line-height: 67px;
 }
+
+h2, .heading-2 {
+  color: $grey-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 50px;
+  &--white {
+    color: #fff;
+  }
+}
+
+
+h3, .heading-3 {
+  color: $grey-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text {
+  color: $grey-dark;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  &.lead {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  &--white {
+    color: white;
+  }
+}

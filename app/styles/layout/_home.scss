@@ -1,0 +1,30 @@
+.about {
+  @extend %text-center;
+  &__figure {
+    height: 80px;
+    line-height: 80px;
+    margin-top: 50px;
+    &--offset {
+      margin-top: 100px;
+    }
+    > img {
+      vertical-align: middle;
+    }
+  }
+
+  .row {
+    .text {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.philosophy {
+  @extend %triangle;
+  @extend %text-center;
+  &__text {
+    padding-top: 200px;
+  }
+
+}
