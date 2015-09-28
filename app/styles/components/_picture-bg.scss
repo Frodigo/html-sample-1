@@ -1,0 +1,28 @@
+@mixin picture-bg($selector) {
+
+  #{$selector} {
+    position: relative;
+  }
+
+  #{$selector}__picture {
+    display: block;
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  #{$selector}__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+
+@include picture-bg('.main-header');
+@include picture-bg('.philosophy');
+@include picture-bg('.facts');
+@include picture-bg('.contact');
