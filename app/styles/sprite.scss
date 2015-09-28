@@ -1,0 +1,34 @@
+%svg-common {
+	background: url(svg/sprite.css-e2f3501d.svg) no-repeat;
+}
+
+.svg-mail {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-mail-dims {
+	width: 26px;
+	height: 20px;
+}
+
+.svg-marker {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-marker-dims {
+	width: 19px;
+	height: 26px;
+}
+
+.svg-phone {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-phone-dims {
+	width: 26px;
+	height: 26px;
+}
+

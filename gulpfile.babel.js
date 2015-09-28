@@ -4,6 +4,7 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import gulpSVGSprite from 'gulp-svg-sprite';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -78,6 +79,21 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('svg-sprites', () => {
+  return gulp.src('**/*.svg', {cwd: 'app/images/svg'})
+    .pipe(gulpSVGSprite({
+      mode: {
+        css: {     // Activate the «css» mode
+          render: {
+            scss: true  // Activate CSS output (with default options)
+          },
+          dest: ''
+        }
+      }
+    }))
+    .pipe(gulp.dest('app/styles/'));
+});
+
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
@@ -89,7 +105,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'], () => {
+gulp.task('serve', ['styles', 'fonts', 'svg-sprites'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -111,6 +127,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
+  gulp.watch('app/images/svg/**/*.svg', ['svg-sprites']);
 });
 
 gulp.task('serve:dist', () => {
@@ -156,7 +173,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'images','svg', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
