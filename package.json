@@ -39,6 +39,5 @@
     }
   },
   "dependencies": {
-    "gulp-svg-sprite": "^1.2.10"
   }
 }

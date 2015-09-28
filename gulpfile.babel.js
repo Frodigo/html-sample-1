@@ -94,6 +94,7 @@ gulp.task('svg-sprites', () => {
     .pipe(gulp.dest('app/styles/'));
 });
 
+
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',

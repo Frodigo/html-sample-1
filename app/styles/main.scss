@@ -1,4 +1,5 @@
-$icon-font-path: '../fonts/';
+@import 'base/variables';
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -11,6 +12,10 @@ $icon-font-path: '../fonts/';
 
 @import
   'components/picture-bg';
+
+@import
+  'specifics/typography',
+  'specifics/buttons';
 
 @import
   'layout/header';

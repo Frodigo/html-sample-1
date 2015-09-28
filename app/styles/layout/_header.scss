@@ -1,0 +1,37 @@
+.navbar {
+  border: none;
+  padding: 15px 0;
+  &-brand {
+    padding: 0;
+    margin-left: 0 !important;
+    height: auto;
+  }
+  &-nav {
+    float: right;
+    &__link {
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+.main-header__text {
+  bottom: 0;
+}
+
+.intro {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  &__small {
+    float: right;
+    font-size: 22px;
+    font-weight: 400;
+    color: $green;
+    letter-spacing: 1px;
+    border-top: 2px solid rgba(255,255,255, 0.2);
+  }
+}
