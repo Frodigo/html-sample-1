@@ -33,3 +33,101 @@
 .team {
   @extend %text-center;
 }
+
+.facts {
+  @extend %triangle;
+  @extend %text-center;
+  &__text {
+    padding-top: 100px;
+  }
+  &__list {
+    margin: 50px auto;
+    &__item {
+      margin-left: 8px;
+      margin-right: 8px;
+      border: 1px solid rgba(#fff,0.36);
+      width: 250px;
+      min-height: 160px;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 37px;
+      strong {
+        display: block;
+        color: $green;
+        font-size: 53px;
+        font-weight: 700;
+        line-height: 53px;
+        padding-top: 30px;
+      }
+      &--offset {
+        position: relative;
+        top: 50px;
+      }
+    }
+  }
+
+}
+
+.projects {
+  @extend %text-center;
+  .lead {
+    margin-bottom: 50px;
+  }
+  .offset-top {
+    margin-top: 90px;
+  }
+  &__item {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+    }
+    &__overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($green, 0.88);
+      font-size: 20px;
+      font-weight: 300;
+      color: #fff;
+      padding-top: 60px;
+      line-height: 190px;
+      opacity: 0;
+      transition: opacity .5s ease-out;
+      &:hover {
+        text-decoration: none;
+
+      }
+      &:before, &:after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+      }
+      &:before {
+        width: 1px;
+        height: 54px;
+        margin-top: -40px;
+      }
+      &:after {
+        width: 54px;
+        height: 1px;
+        margin-left: -25px;
+        margin-top: -13px;
+      }
+    }
+
+    &:hover {
+      .projects__item__overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
