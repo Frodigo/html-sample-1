@@ -1,10 +1,10 @@
 %svg-common {
-	background: url(svg/sprite.css-fbb39966.svg) no-repeat;
+	background: url(svg/sprite.css-4a2adbba.svg) no-repeat;
 }
 
 .svg-arrow-left {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 0 67.94871794871794%;
 }
 
 .svg-arrow-left-dims {
@@ -14,7 +14,7 @@
 
 .svg-arrow-right {
 	@extend %svg-common;
-	background-position: 2.4756189047261814% 100%;
+	background-position: 2.4756189047261814% 67.94871794871794%;
 }
 
 .svg-arrow-right-dims {
@@ -24,7 +24,7 @@
 
 .svg-facebook {
 	@extend %svg-common;
-	background-position: 4.982260134370046% 78.11348563006634%;
+	background-position: 5.8126368234317205% 95.31502423263329%;
 }
 
 .svg-facebook-dims {
@@ -32,9 +32,39 @@
 	height: 41.3px;
 }
 
+.svg-facebook-big {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-facebook-big-dims {
+	width: 28.2px;
+	height: 50px;
+}
+
+.svg-googleplus {
+	@extend %svg-common;
+	background-position: 13.191553772799516% 53.88917132689375%;
+}
+
+.svg-googleplus-dims {
+	width: 44.7px;
+	height: 30.3px;
+}
+
+.svg-instagram {
+	@extend %svg-common;
+	background-position: 2.140904949893714% 98.44271412680756%;
+}
+
+.svg-instagram-dims {
+	width: 48.8px;
+	height: 47.2px;
+}
+
 .svg-mail {
 	@extend %svg-common;
-	background-position: 11% 67.51592356687898%;
+	background-position: 19.70149253731343% 51.207729468599034%;
 }
 
 .svg-mail-dims {
@@ -44,7 +74,7 @@
 
 .svg-marker {
 	@extend %svg-common;
-	background-position: 4.8997772828507795% 97.5496688741722%;
+	background-position: 16.258351893095767% 52.7363184079602%;
 }
 
 .svg-marker-dims {
@@ -54,7 +84,7 @@
 
 .svg-phone {
 	@extend %svg-common;
-	background-position: 6.343283582089552% 97.5496688741722%;
+	background-position: 17.761194029850746% 52.7363184079602%;
 }
 
 .svg-phone-dims {
@@ -74,11 +104,31 @@
 
 .svg-twitter {
 	@extend %svg-common;
-	background-position: 8.09261633607361% 74.3859649122807%;
+	background-position: 8.922241496342107% 91.94805194805195%;
 }
 
 .svg-twitter-dims {
 	width: 40.1px;
 	height: 34.5px;
+}
+
+.svg-twitter-big {
+	@extend %svg-common;
+	background-position: 5.0443289513910115% 58.33791964777105%;
+}
+
+.svg-twitter-big-dims {
+	width: 57.6px;
+	height: 45.3px;
+}
+
+.svg-vimeo {
+	@extend %svg-common;
+	background-position: 9.397095719607695% 57.82869612656847%;
+}
+
+.svg-vimeo-dims {
+	width: 50.7px;
+	height: 43.7px;
 }
 

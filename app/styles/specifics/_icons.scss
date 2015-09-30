@@ -1,0 +1,34 @@
+.icon {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+}
+
+.icon-facebook-big {
+  @extend .svg-facebook-big-dims;
+  @extend .svg-facebook-big;
+}
+
+
+.icon-twitter-big {
+  @extend .svg-twitter-big-dims;
+  @extend .svg-twitter-big;
+}
+
+.icon-google-plus-big {
+  @extend .svg-googleplus;
+  @extend .svg-googleplus-dims;
+}
+
+
+.icon-vimeo {
+  @extend .svg-vimeo;
+  @extend .svg-vimeo-dims;
+}
+
+
+.icon-instagram {
+  @extend .svg-instagram;
+  @extend .svg-instagram-dims;
+}
