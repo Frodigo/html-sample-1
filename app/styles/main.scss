@@ -11,7 +11,9 @@
   'sprite';
 
 @import
-  'components/picture-bg';
+  'components/picture-bg/picture-bg',
+  'components/carousel/carousel',
+  'components/card/card';
 
 @import
   'specifics/typography',

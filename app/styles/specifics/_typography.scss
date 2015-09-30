@@ -21,6 +21,18 @@ h3, .heading-3 {
   text-transform: uppercase;
 }
 
+h4, .heading-4 {
+  font-weight: 700;
+  margin-top: 15px;
+  small {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    color: $white;
+
+  }
+}
+
 .text {
   color: $grey-dark;
   font-size: 15px;
@@ -32,5 +44,8 @@ h3, .heading-3 {
   }
   &--white {
     color: white;
+  }
+  &--green {
+    color: $green;
   }
 }

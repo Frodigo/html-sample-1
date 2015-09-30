@@ -1,10 +1,40 @@
 %svg-common {
-	background: url(svg/sprite.css-9e113b9d.svg) no-repeat;
+	background: url(svg/sprite.css-fbb39966.svg) no-repeat;
+}
+
+.svg-arrow-left {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-arrow-left-dims {
+	width: 33px;
+	height: 71px;
+}
+
+.svg-arrow-right {
+	@extend %svg-common;
+	background-position: 2.4756189047261814% 100%;
+}
+
+.svg-arrow-right-dims {
+	width: 33px;
+	height: 71px;
+}
+
+.svg-facebook {
+	@extend %svg-common;
+	background-position: 4.982260134370046% 78.11348563006634%;
+}
+
+.svg-facebook-dims {
+	width: 41.3px;
+	height: 41.3px;
 }
 
 .svg-mail {
 	@extend %svg-common;
-	background-position: 0 80.3030303030303%;
+	background-position: 11% 67.51592356687898%;
 }
 
 .svg-mail-dims {
@@ -14,7 +44,7 @@
 
 .svg-marker {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 4.8997772828507795% 97.5496688741722%;
 }
 
 .svg-marker-dims {
@@ -24,7 +54,7 @@
 
 .svg-phone {
 	@extend %svg-common;
-	background-position: 1.4179104477611941% 100%;
+	background-position: 6.343283582089552% 97.5496688741722%;
 }
 
 .svg-phone-dims {
@@ -40,5 +70,15 @@
 .svg-separator-dims {
 	width: 1366px;
 	height: 106px;
+}
+
+.svg-twitter {
+	@extend %svg-common;
+	background-position: 8.09261633607361% 74.3859649122807%;
+}
+
+.svg-twitter-dims {
+	width: 40.1px;
+	height: 34.5px;
 }
 

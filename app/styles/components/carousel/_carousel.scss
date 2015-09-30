@@ -1,0 +1,38 @@
+@mixin carousel($selector) {
+  #{$selector} {
+    margin: 30px 80px;
+    img {
+      width: 100%;
+    }
+    .slide {
+      margin: 10px;
+      width: 300px;
+      transform: translateY(0);
+      transition: transform ease-out .5s;
+      &.slick-center {
+        transform: translateY(50px);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .slick-track {
+      padding-bottom: 60px;
+    }
+  }
+
+  .slick-arrow {
+    @extend .svg-arrow-left-dims;
+    margin-top: -65px;
+    &.slick-prev {
+      @extend .svg-arrow-left;
+      left: -50px;
+    }
+    &.slick-next {
+      @extend .svg-arrow-right;
+      right: -50px;
+    }
+  }
+}
+
+@include carousel('.carousel');
