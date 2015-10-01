@@ -205,3 +205,22 @@
     text-transform: uppercase;
   }
 }
+
+.clients {
+  @extend %text-center;
+  &__list {
+    margin: 30px auto;
+    &__item {
+      &__link {
+        display: inline-block;
+        margin: 0 20px;
+        height: 60px;
+        line-height: 60px;
+        img {
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
