@@ -2,6 +2,10 @@ h1, .heading-1 {
   font-weight: 100;
   color: white;
   line-height: 67px;
+  @media (max-width: 991px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 h2, .heading-2 {

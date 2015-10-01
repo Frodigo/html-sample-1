@@ -14,8 +14,10 @@
 
   .row {
     .text {
-      padding-left: 20px;
-      padding-right: 20px;
+      @include breakpoint(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       @include breakpoint(desktop) {
         padding-left: 50px;
         padding-right: 50px;
@@ -28,7 +30,10 @@
   @extend %triangle;
   @extend %text-center;
   &__text {
-    padding-top: 140px;
+    padding-top: 90px;
+    @include breakpoint(sm) {
+      padding-top: 140px;
+    }
     @include breakpoint(desktop) {
       padding-top: 200px;
     }
@@ -59,6 +64,7 @@
       font-size: 20px;
       font-weight: 300;
       line-height: 37px;
+      margin-bottom: 16px;
       strong {
         display: block;
         color: $green;
@@ -69,7 +75,14 @@
       }
       &--offset {
         position: relative;
-        top: 50px;
+
+        @include breakpoint(sm) {
+          top: 50px;
+        }
+      }
+
+      @include breakpoint(sm) {
+        margin-bottom: 0;
       }
 
       @include breakpoint(desktop) {
@@ -96,7 +109,9 @@
     margin-bottom: 50px;
   }
   .offset-top {
-    margin-top: 90px;
+    @include breakpoint(sm) {
+      margin-top: 90px;
+    }
   }
   &__item {
     display: block;
@@ -158,7 +173,10 @@
   @extend %text-center;
   @extend %triangle;
   &__text {
-    padding-top: 80px;
+    padding-top: 100px;
+    @include breakpoint(sm) {
+      padding-top: 80px;
+    }
     @include breakpoint(desktop) {
       padding-top: 100px;
     }
@@ -170,7 +188,10 @@
     }
     &__item {
       vertical-align: top;
-      margin: 0 5px;
+      margin: 15px 30px;
+      @include breakpoint(sm) {
+        margin: 0 5px;
+      }
       @include breakpoint(desktop) {
         margin: 0 30px;
       }
@@ -250,7 +271,10 @@
 .clients {
   @extend %text-center;
   &__list {
-    margin: 30px auto;
+    margin: 0 auto;
+    @include breakpoint(sm) {
+      margin: 30px auto;
+    }
     &__item {
       &__link {
         display: inline-block;
@@ -278,21 +302,33 @@
     padding-top: 120px;
   }
   &__list {
-    margin-top: 50px;
+    margin-top: 30px;
+    @include breakpoint(sm) {
+      margin-top: 50px;
+    }
     @include breakpoint(desktop) {
       margin-top: 100px;
     }
     &__item {
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 25px;
       color: white;
       width: 33%;
+      @include breakpoint(sm) {
+        font-size: 22px;
+      }
       &:first-child {
-        text-align: left;
+        @include breakpoint(sm) {
+          text-align: left;
+        }
+
       }
       &:last-child {
-        text-align: right;
+        @include breakpoint(sm) {
+          text-align: right;
+        }
+
       }
       &__link {
         color: white;

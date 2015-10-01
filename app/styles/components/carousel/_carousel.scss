@@ -1,12 +1,15 @@
 @mixin carousel($selector) {
   #{$selector} {
-    margin: 30px 80px;
+    margin: 30px 200px 0 200px;
+    @include breakpoint(sm) {
+      margin: 30px 80px;
+    }
     img {
       width: 100%;
     }
     .slide {
       margin: 10px;
-      width: 250px;
+      width: 300px;
       transform: translateY(0);
       transition: transform ease-out .5s;
       &.slick-center {
@@ -16,12 +19,18 @@
         outline: none;
       }
 
+      @include breakpoint(sm) {
+        width: 250px;
+      }
+
       @include breakpoint(desktop) {
         width: 300px;
       }
     }
     .slick-track {
-      padding-bottom: 60px;
+      @include breakpoint(sm) {
+        padding-bottom: 60px;
+      }
     }
   }
 

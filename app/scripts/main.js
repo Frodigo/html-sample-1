@@ -12,11 +12,17 @@
     $(window).on('load', function() {
       project.initCarousel(project.$carousel, {
         mobileFirst: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: true
-        //centerPadding: '20px'
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              centerMode: true
+            }
+          }
+        ]
       });
 
       project.initCarousel(project.$slider);

@@ -2,12 +2,17 @@
 
 .btn-default {
   border-width: 2px;
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
-  padding: 16px 40px;
+  padding: 12px 30px;
   &:hover, &:focus {
     border-color: white;
     color: white;
+  }
+
+  @include breakpoint(sm) {
+    padding: 16px 40px;
+    font-size: 22px;
   }
 }
 

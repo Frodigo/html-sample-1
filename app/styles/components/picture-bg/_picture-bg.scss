@@ -10,13 +10,23 @@
       display: block;
       width: 100%;
     }
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   #{$selector}__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: $grey-dark;
+    padding: 20px 0;
+    @include breakpoint(sm) {
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+    }
   }
 
 }
