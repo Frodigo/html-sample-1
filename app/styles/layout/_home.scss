@@ -182,3 +182,26 @@
     }
   }
 }
+
+
+
+.testimonials {
+  @extend %text-center;
+  &__figure {
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  &__caption {
+    color: $green;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+}
