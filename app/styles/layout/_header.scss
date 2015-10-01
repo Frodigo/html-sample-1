@@ -3,8 +3,11 @@
   padding: 15px 0;
   &-brand {
     padding: 0;
-    margin-left: 0 !important;
+    margin-left: 15px;
     height: auto;
+    @include breakpoint(tablet) {
+      margin-left: 0 !important;
+    }
   }
   &-nav {
     float: right;
@@ -19,15 +22,14 @@
 
 .main-header__text {
   bottom: 0;
-  padding: 0;
+  padding-bottom: 30px;
+  @include breakpoint(tablet) {
+    padding: 0;
+  }
 
 }
 
 .intro {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 150px;
   &__small {
     float: right;
     font-size: 18px;
@@ -38,6 +40,13 @@
     @include breakpoint(sm) {
       font-size: 22px;
     }
+  }
+
+  @include breakpoint(sm) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 150px;
   }
 
 

@@ -1,6 +1,9 @@
 @mixin carousel($selector) {
   #{$selector} {
-    margin: 30px 200px 0 200px;
+    margin: 30px auto;
+    @include breakpoint(tablet) {
+      margin: 30px 200px 0 200px;
+    }
     @include breakpoint(sm) {
       margin: 30px 80px;
     }
@@ -44,6 +47,10 @@
     &.slick-next {
       @extend .svg-arrow-right;
       right: -50px;
+    }
+
+    @media (max-width: 767px) {
+      display: none !important;
     }
   }
 }

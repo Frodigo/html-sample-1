@@ -5,7 +5,10 @@
     line-height: 80px;
     margin-top: 50px;
     &--offset {
-      margin-top: 100px;
+      @include breakpoint(tablet) {
+        margin-top: 100px;
+      }
+
     }
     > img {
       vertical-align: middle;
@@ -135,6 +138,9 @@
       line-height: 190px;
       opacity: 0;
       transition: opacity .5s ease-out;
+      @media (max-width: 767px) {
+        font-size: 0;
+      }
       &:hover {
         text-decoration: none;
 
@@ -255,8 +261,10 @@
     }
   }
   &__text {
-    width: 50%;
     margin: 20px auto;
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
   }
 
   &__caption {
@@ -314,7 +322,11 @@
       font-weight: 300;
       line-height: 25px;
       color: white;
-      width: 33%;
+      margin-bottom: 15px;
+      @include breakpoint(tablet) {
+        width: 33%;
+        margin-bottom: 0;
+      }
       @include breakpoint(sm) {
         font-size: 22px;
       }
