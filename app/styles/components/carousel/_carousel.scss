@@ -6,7 +6,7 @@
     }
     .slide {
       margin: 10px;
-      width: 300px;
+      width: 250px;
       transform: translateY(0);
       transition: transform ease-out .5s;
       &.slick-center {
@@ -14,6 +14,10 @@
       }
       &:focus {
         outline: none;
+      }
+
+      @include breakpoint(desktop) {
+        width: 300px;
       }
     }
     .slick-track {
@@ -36,3 +40,16 @@
 }
 
 @include carousel('.carousel');
+
+
+
+.testimonials {
+  .slick-arrow {
+    &.slick-next {
+      right: 0;
+    }
+    &.slick-prev {
+      left: 0;
+    }
+  }
+}

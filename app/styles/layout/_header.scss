@@ -25,7 +25,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 300px;
+  bottom: 150px;
   &__small {
     float: right;
     font-size: 22px;
@@ -33,5 +33,10 @@
     color: $green;
     letter-spacing: 1px;
     border-top: 2px solid rgba(255,255,255, 0.2);
+  }
+
+
+  @include breakpoint(desktop) {
+    bottom: 300px;
   }
 }

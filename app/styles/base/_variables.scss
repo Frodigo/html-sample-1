@@ -19,3 +19,11 @@ $btn-font-weight: 300;
 $btn-default-color: rgba(255,255,255,0.56);
 $btn-default-bg: transparent;
 $border-radius-base: 0;
+
+
+$breakpoints: (
+  "desktop": 1200px,
+  "sm": 992px,
+  "tablet": 768px
+
+);
