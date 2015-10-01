@@ -224,3 +224,45 @@
     }
   }
 }
+
+
+.contact {
+  @extend %text-center;
+  @extend %triangle;
+  &__text {
+    padding-top: 120px;
+  }
+  &__list {
+    margin-top: 100px;
+    &__item {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 25px;
+      color: white;
+      width: 33%;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+      }
+      &__link {
+        color: white;
+        text-decoration: none;
+        line-height: 30px;
+        display: inline-block;
+        .icon {
+          margin-right: 10px;
+          &.icon-phone {
+            top: -2px;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+}

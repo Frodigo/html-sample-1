@@ -32,3 +32,20 @@
   @extend .svg-instagram;
   @extend .svg-instagram-dims;
 }
+
+
+.icon-phone {
+  @extend .svg-phone;
+  @extend .svg-phone-dims;
+}
+
+
+.icon-mail {
+  @extend .svg-mail;
+  @extend .svg-mail-dims;
+}
+
+.icon-marker {
+  @extend .svg-marker;
+  @extend .svg-marker-dims;
+}
