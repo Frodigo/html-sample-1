@@ -1,13 +1,30 @@
+'use strict';
+
 (function($) {
+
+  /**
+   * Project
+   */
+
   var project = {};
   project.$carousel = $('[data-component=carousel]');
   project.$slider = $('[data-component=slider]');
+
+  /**
+   * init slick slider/carousel
+   * @method
+   */
   project.initCarousel = function($carousel, options) {
     if($.fn.slick && $carousel.length) {
       $carousel.slick(options);
     }
 
   };
+
+  /**
+   * Init project
+   * @method
+   */
   project.init = function() {
     $(window).on('load', function() {
       project.initCarousel(project.$carousel, {
@@ -31,6 +48,3 @@
 
   $(project.init);
 })(jQuery);
-
-
-// TODO Add comments
