@@ -44,6 +44,9 @@
   .slick-arrow {
     @extend .svg-arrow-left-dims;
     margin-top: -65px;
+    &:before {
+      display: none;
+    }
     &.slick-prev {
       @extend .svg-arrow-left;
       left: -50px;

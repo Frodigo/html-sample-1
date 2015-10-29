@@ -18,6 +18,7 @@
   "smarttabs": false,
   "browser": false,
   "globals": {
-    "jQuery": true
+    "jQuery": true,
+    "window": true
   }
 }

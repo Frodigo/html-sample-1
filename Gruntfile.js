@@ -93,7 +93,7 @@ module.exports = function(grunt) {
 
     jsdoc : {
       dist : {
-        src: ['development/js/*.js', 'development/test/*.js'],
+        src: ['development/scripts/*.js', 'development/test/*.js'],
         options: {
           destination: 'development/docs/js'
         }
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: [{
-          src: ['development/js/**/*.js']
+          src: ['development/scripts/**/*.js']
         }]
       }
     },
